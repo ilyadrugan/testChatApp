@@ -46,13 +46,16 @@ export const Stack = styled.View<Props>`
 export const TouchableStack = styled.TouchableOpacity<Props>`
   width: ${(p) =>
     typeof p.width === "string" ? p.width : perfectSize(p.width) || "auto"};
+  height: ${(p) =>
+    typeof p.height === "string" ? p.height : perfectSize(p.height) || "auto"};
   align-items: ${(p) => (p.aic ? p.aic : "flex-start")};
+  align-self: ${(p) => (p.ais ? p.ais : "flex-start")};
   flex-direction: ${(p) => (p.row ? "row" : "column")};
   justify-content: ${(p) => p.justify || "flex-start"};
   margin-top: ${(p) => perfectSize(p.mt) || 0}px;
-  margin-left: ${(p) => perfectSize(p.ml) || 0}px;
-  margin-right: ${(p) => perfectSize(p.mr) || 0}px;
   margin-bottom: ${(p) => perfectSize(p.mb) || 0}px;
+  margin-right: ${(p) => perfectSize(p.mr) || 0}px;
+  margin-left: ${(p) => perfectSize(p.ml) || 0}px;
   padding-top: ${(p) => perfectSize(p.pt) || 0}px;
   padding-bottom: ${(p) => perfectSize(p.pb) || 0}px;
   padding-left: ${(p) => perfectSize(p.pl) || 0}px;

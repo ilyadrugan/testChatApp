@@ -55,7 +55,6 @@ export const ChatList: FC<Props> = ({ navigation }) => {
                   {companion.avatar ? (
                     <Image br={40} source={{ uri: companion.avatar }} />
                   ) : (
-                    //   <Image source={{ uri: companion.avatar }} />
                     <Stack
                       width={60}
                       bg={"#EEEEEE"}
