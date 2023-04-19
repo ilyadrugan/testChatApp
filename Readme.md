@@ -11,6 +11,7 @@ Structure of app:
 
 # STACK
 
+- Expo
 - Styled-components
 - Typescript 
 - Pixel-perfect (библиотека для соблюдения пропорциональных размеров для разных размеров телефонов)
