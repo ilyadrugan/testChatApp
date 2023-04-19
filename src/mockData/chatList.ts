@@ -64,7 +64,7 @@ export const chatList = {
           receiver_id: 1,
           message: "John, can you help me with this project?",
           attachment:
-            "https://www.shutterstock.com/shutterstock/videos/1056051401/preview/stock-footage-dogs-dance-d-rendering-animation-loop-included-in-the-end-of-the-clip-with-alpha-matte.webm",
+            "https://static.videezy.com/system/resources/previews/000/037/501/original/Hi-Tech_HUD__global_warming_concept_00352.mp4",
         },
         {
           timestamp: "2023-04-17T09:34:56Z",
@@ -136,7 +136,7 @@ export const chatList = {
           receiver_id: 1,
           message: "That works for me! Let's plan on lunch next Tuesday.",
           attachment:
-            "https://www.shutterstock.com/shutterstock/videos/1082054810/preview/stock-footage-funny-cute-pug-dog-do-fitness-workout-gym-dumbbell-in-the-paw-doing-dumbbells-exercise-dog.webm",
+            "https://static.videezy.com/system/resources/previews/000/037/795/original/DH064.mp4",
         },
       ],
     },
