@@ -29,6 +29,7 @@ export const Chat: FC<Props> = ({ route }) => {
       timestamp: new Date().toJSON(),
       sender_id: user.user_id,
       receiver_id: companion.user_id,
+      attachment: "",
     };
     if (messageObj.message.length > 0)
       setMessagesData([messageObj, ...messagesData]);
@@ -48,7 +49,7 @@ export const Chat: FC<Props> = ({ route }) => {
             renderItem={({ item }: { item: Message }) => {
               const time = formatTimeToRU(item.timestamp);
               const text = item.message;
-
+              const attachment = item.attachment;
               return (
                 <Stack
                   width={"100%"}
@@ -57,7 +58,7 @@ export const Chat: FC<Props> = ({ route }) => {
                     user.user_id === item.sender_id ? "flex-end" : "flex-start"
                   }
                 >
-                  <Bubble time={time} text={text} />
+                  <Bubble time={time} text={text} attachment={attachment} />
                 </Stack>
               );
             }}

@@ -22,18 +22,22 @@ export const chatList = {
           sender_id: 2,
           receiver_id: 1,
           message: "Hey John, how are you doing today?",
+          attachment: "",
         },
         {
           timestamp: "2023-04-18T12:45:12Z",
           sender_id: 1,
           receiver_id: 2,
           message: "I'm doing good, thanks for asking! How about you?",
+          attachment:
+            "https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
         },
         {
           timestamp: "2023-04-18T13:10:23Z",
           sender_id: 2,
           receiver_id: 1,
           message: "I'm doing well too. Just wanted to check in and say hi!",
+          attachment: "",
         },
       ],
     },
@@ -59,12 +63,15 @@ export const chatList = {
           sender_id: 3,
           receiver_id: 1,
           message: "John, can you help me with this project?",
+          attachment:
+            "https://www.shutterstock.com/shutterstock/videos/1056051401/preview/stock-footage-dogs-dance-d-rendering-animation-loop-included-in-the-end-of-the-clip-with-alpha-matte.webm",
         },
         {
           timestamp: "2023-04-17T09:34:56Z",
           sender_id: 1,
           receiver_id: 3,
           message: "Sure thing Jimmy! What do you need help with?",
+          attachment: "",
         },
         {
           timestamp: "2023-04-17T10:15:23Z",
@@ -72,12 +79,14 @@ export const chatList = {
           receiver_id: 1,
           message:
             "I need some advice on the design. Can I send you some sketches?",
+          attachment: "",
         },
         {
           timestamp: "2023-04-17T10:35:12Z",
           sender_id: 1,
           receiver_id: 3,
           message: "Of course, feel free to send them over and we can discuss!",
+          attachment: "",
         },
       ],
     },
@@ -103,6 +112,7 @@ export const chatList = {
           sender_id: 1,
           receiver_id: 4,
           message: "Jenny, are you free for lunch tomorrow?",
+          attachment: "",
         },
         {
           timestamp: "2023-04-16T18:45:12Z",
@@ -110,6 +120,7 @@ export const chatList = {
           receiver_id: 1,
           message:
             "Sorry John, I already have plans tomorrow. Maybe we can do lunch another day?",
+          attachment: "",
         },
         {
           timestamp: "2023-04-16T19:10:23Z",
@@ -117,12 +128,15 @@ export const chatList = {
           receiver_id: 4,
           message:
             "No worries, we can reschedule for next week. How does next Tuesday work for you?",
+          attachment: "",
         },
         {
           timestamp: "2023-04-16T19:15:34Z",
           sender_id: 4,
           receiver_id: 1,
           message: "That works for me! Let's plan on lunch next Tuesday.",
+          attachment:
+            "https://www.shutterstock.com/shutterstock/videos/1082054810/preview/stock-footage-funny-cute-pug-dog-do-fitness-workout-gym-dumbbell-in-the-paw-doing-dumbbells-exercise-dog.webm",
         },
       ],
     },
