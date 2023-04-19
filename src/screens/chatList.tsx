@@ -14,16 +14,11 @@ import { chatList } from "../mockData/chatList";
 import { formatTimeToRU } from "../utils/formatTime";
 import { Chat } from "../types/chat";
 import { Image } from "../components/image";
+import { getLastMessage, getLastMessageTime } from "../utils/getLastMessage";
 
 type Props = NativeStackScreenProps<RootStackParamList, "chatList">;
 
 export const ChatList: FC<Props> = ({ navigation }) => {
-  const getLastMessage = (chat: Chat) => {
-    return chat.messages.slice(-1)[0].message;
-  };
-  const getLastMessageTime = (chat: Chat) => {
-    return chat.messages.slice(-1)[0].timestamp;
-  };
   return (
     <Container>
       <NavigationHeader title="Чаты" noback />
@@ -31,7 +26,6 @@ export const ChatList: FC<Props> = ({ navigation }) => {
         data={chatList.chat_list}
         keyExtractor={(_, index) => index.toString()}
         contentContainerStyle={{
-          paddingBottom: 100,
           width: SCREEN_WIDTH,
         }}
         renderItem={({ item }: { item: Chat }) => {
@@ -47,7 +41,7 @@ export const ChatList: FC<Props> = ({ navigation }) => {
                 onPress={() =>
                   navigation.navigate("chat", {
                     chat: item,
-                    messages: item.messages.reverse(),
+                    messages: [...item.messages].reverse(),
                   })
                 }
               >
@@ -61,7 +55,7 @@ export const ChatList: FC<Props> = ({ navigation }) => {
                       br={52}
                       aic={"center"}
                       justify="center"
-                      style={{ height: perfectSize(60) }}
+                      height={60}
                     >
                       <H3>{companion.username || ""}</H3>
                     </Stack>
