@@ -33,7 +33,7 @@ export const ChatList: FC<Props> = ({ navigation }) => {
           return (
             <>
               <TouchableStack
-                mt={16}
+                mt={6}
                 pr={16}
                 pl={16}
                 row

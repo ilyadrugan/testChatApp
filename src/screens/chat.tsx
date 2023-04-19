@@ -71,7 +71,7 @@ export const Chat: FC<Props> = ({ route }) => {
               h={56}
               onChangeText={(text) => setValue(text)}
             />
-            <TouchableStack onPress={sendMessage}>
+            <TouchableStack mt={14} onPress={sendMessage}>
               <Feather name="send" size={24} color="black" />
             </TouchableStack>
           </InputWrapper>
